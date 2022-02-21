@@ -1,11 +1,22 @@
 {
-    "name": "my-extension",
-    "description": "This is my first chrome extension",
-    "version": "0.1",
     "manifest_version": 2,
-    "permissions": ["geolocation"],
-    "browser_action":{
-        "default_icon": "temperature.png", 
-        "default_popup": "popup.html" 
+    "name": "De Stress",
+    "description": "Will open a new page ",
+    "version": "0.0.0.1",
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "sessions",
+        "tabs",
+        "chrome://favicon/"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
     }
 }
