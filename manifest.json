@@ -1,25 +1,11 @@
 {
+    "name": "my-extension",
+    "description": "This is my first chrome extension",
+    "version": "0.1",
     "manifest_version": 2,
-    "name": "Search using...",
-    "description": "Search ",
-    "version": "1.0",
-    "browser_specific_settings": {
-        "gecko": {
-            "strict_min_version": "63.0b14"
-        }
-    },
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-    "permissions": [
-        "menus",
-        "search"
-    ],
-    "icons": {
-        "16": "icons/page-16.png",
-        "32": "icons/page-32.png",
-        "48": "icons/page-48.png"
+    "permissions": ["geolocation"],
+    "browser_action":{
+        "default_icon": "temperature.png", 
+        "default_popup": "popup.html" 
     }
 }
