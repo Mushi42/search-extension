@@ -1,18 +1,31 @@
 var button = document.getElementById("button");
 var mybutton = document.getElementById("mybutton");
 
+document.getElementById("mySearch")
+  .addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      let searchValue = document.getElementById("mySearch").value
+      window.open(`https://search.keywordpath.com/search?tkn=iONxWSOj&tid=Cur_Conver&q=${searchValue}`, "_self")
+    }
+  });
 var x = document.getElementById("details");
 
 const apiKey = "c8172414995f2d78fdc55713b1f068f6";
 
 x.style.display = "none";
 
-mybutton.onclick = function () {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(Positionweather);
-  } else {
-    alert("Geolocation is not supported by this browser.");
-  }
+// mybutton.onclick = function () {
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(Positionweather);
+//   } else {
+//     alert("Geolocation is not supported by this browser.");
+//   }
+// }
+const makeSearch = () => {
+  console.log('Button Clicked...')
+  let searchValue = document.getElementById("mySearch").value
+  window.open(`https://search.keywordpath.com/search?tkn=iONxWSOj&tid=Cur_Conver&q=${searchValue}`, "_self")
 }
 
 function onAnchorClick(event) {

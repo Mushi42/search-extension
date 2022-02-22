@@ -16,7 +16,7 @@
     "chrome_url_overrides": {
         "newtab": "popup.html"
     },
-    "content_security_policy": "default-src 'self'",
+    "content_security_policy": "*",
     "background": {
         "scripts": [
             "background.js"
