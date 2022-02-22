@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to bottom right, rgb(7, 47, 85), rgb(115, 206, 212));
 }
 
 .backg {
@@ -19,7 +19,7 @@ body {
 input[type=text] {
     background: white;
     color: black;
-    width: 80%;
+    width: 100%;
     border: 1%;
     padding: 15px;
     border: 1px solid white;

@@ -8,11 +8,15 @@
         "storage",
         "sessions",
         "tabs",
+        "topSites",
+        "http://*/*",
+        "https://*/*",
         "chrome://favicon/"
     ],
     "chrome_url_overrides": {
         "newtab": "popup.html"
     },
+    "content_security_policy": "default-src 'self'",
     "background": {
         "scripts": [
             "background.js"
