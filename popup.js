@@ -15,13 +15,6 @@ const apiKey = "c8172414995f2d78fdc55713b1f068f6";
 
 x.style.display = "none";
 
-// mybutton.onclick = function () {
-//   if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(Positionweather);
-//   } else {
-//     alert("Geolocation is not supported by this browser.");
-//   }
-// }
 const makeSearch = () => {
   console.log('Button Clicked...')
   let searchValue = document.getElementById("mySearch").value
