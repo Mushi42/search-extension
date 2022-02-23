@@ -16,7 +16,10 @@
     "chrome_url_overrides": {
         "newtab": "popup.html"
     },
-    "content_security_policy": "*",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com'; object-src 'self'"
+    },
     "background": {
         "scripts": [
             "background.js"

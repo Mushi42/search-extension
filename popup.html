@@ -10,14 +10,13 @@
         <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id='clock'>
     <div class="navbar">
         <div style="text-align:center;padding:1em 0;">
             <iframe
                 src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Europe%2FAmsterdam"
                 width="100%" height="115" frameborder="0" seamless></iframe>
         </div>
-        <!-- <a target="_blank" href="https://www.booked.net/weather/lahore-9644"> -->
         <span style="margin-right: 20px;">
 
             <img src="https://w.bookcdn.com/weather/picture/1_9644_1_1_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=82684"
@@ -82,7 +81,11 @@
         <div class="container">
             <div class="row">
                 <nav class="col-12 col-sm-12 col-md-12 col-lg-6 footer-b__nav">
-
+                    <label class="custom-file-upload">
+                        <input id='getval' type="file"/>
+                        Change Wallpaper
+                    </label>
+                    
                 </nav>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
                     <ul class="d-flex justify-content-lg-start list-unstyled m-0 p-0">

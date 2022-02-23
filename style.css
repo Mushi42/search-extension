@@ -3,10 +3,25 @@ body {
     padding: 0;
     text-align: center;
     background-image: linear-gradient(to bottom right, rgb(7, 47, 85), rgb(115, 206, 212));
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .backg {
     height: 100vh;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(236, 212, 179);
+    border-radius: 57px;
+    cursor: pointer;
 }
 
 /* The navigation bar */
