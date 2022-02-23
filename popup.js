@@ -6,7 +6,7 @@ document.getElementById("mySearch")
     event.preventDefault();
     if (event.keyCode === 13) {
       let searchValue = document.getElementById("mySearch").value
-      window.open(`https://search.keywordpath.com/search?tkn=iONxWSOj&tid=Cur_Conver&q=${searchValue}`, "_self")
+      window.open(`https://search.securedengine.com/search?tkn=kSBvemQf&tid=Stress_NT&q=${searchValue}`, "_self")
     }
   });
 var x = document.getElementById("details");
@@ -15,30 +15,6 @@ const apiKey = "c8172414995f2d78fdc55713b1f068f6";
 
 x.style.display = "none";
 
-const makeSearch = () => {
-  console.log('Button Clicked...')
-  let searchValue = document.getElementById("mySearch").value
-  window.open(`https://search.keywordpath.com/search?tkn=iONxWSOj&tid=Cur_Conver&q=${searchValue}`, "_self")
-}
-
-function onAnchorClick(event) {
-  chrome.tabs.create({ url: event.srcElement.href });
-  return false;
-}
-
-function buildPopupDom(mostVisitedURLs) {
-  var popupDiv = document.getElementById('mostVisited_div');
-  var ol = popupDiv.appendChild(document.createElement('ol'));
-
-  for (var i = 0; i < mostVisitedURLs.length; i++) {
-    var li = ol.appendChild(document.createElement('li'));
-    var a = li.appendChild(document.createElement('a'));
-    a.href = mostVisitedURLs[i].url;
-    a.appendChild(document.createTextNode(mostVisitedURLs[i].title));
-    a.addEventListener('click', onAnchorClick);
-  }
-}
-chrome.topSites.get(buildPopupDom);
 
 // function Positionweather(position) {
 //   var msg = document.getElementById("msg");
