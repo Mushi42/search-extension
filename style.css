@@ -2,9 +2,22 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(7, 47, 85), rgb(115, 206, 212));
-    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url('https://wallpaper.dog/large/10777293.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.panel {
+    float: left;
+    height: 160px;
+    width: calc(20% - 25px);
+    margin: 8px 25px 0 0;
 }
 
 .backg {
@@ -15,27 +28,56 @@ input[type="file"] {
     display: none;
 }
 
-.custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 20px;
-    background-color: rgb(236, 212, 179);
-    border-radius: 57px;
-    cursor: pointer;
+.hyperLinks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-/* The navigation bar */
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    height: 100px;
+    width: 100px;
+    color: white;
+    margin: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/every-cloud-needs/48/Upload-512.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-color: brown;
+}
+
 .navbar {
     overflow: hidden;
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
 }
 
-/* Links inside the navbar */
 .navbar a {
     float: left;
     display: block;
@@ -45,7 +87,6 @@ input[type="file"] {
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .navbar a:hover {
     background: #ddd;
     color: black;
@@ -63,18 +104,20 @@ input[type=text] {
     color: black;
     width: 100%;
     border: 1%;
+    height: 50px;
     padding: 15px;
+    padding-left: 45px;
     border: 1px solid white;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 button {
     border: 2%;
-    width: 300px;
+    width: 100px;
     padding: 15px;
     background-color: crimson;
-    border: solid white 2px;
+    border: solid white 1px;
     color: white;
     font-size: 15px;
     border-radius: 10px;
@@ -84,7 +127,6 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 p {

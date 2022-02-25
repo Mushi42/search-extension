@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <head>
-    <<meta http-equiv="Content-Security-Policy"
-        content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
-        <title>De Stress Search</title>
-        <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>De Stress Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id='clock'>
@@ -18,12 +17,15 @@
                 width="100%" height="115" frameborder="0" seamless></iframe>
         </div>
         <span style="margin-right: 20px;">
+            <div id="details">
+                <h2 id="msg"></h2>
+                <img id="icon"></img><br>
+                <b id="desc"></b>
+                <h1 id="temp"></h1>
+                <br>
+            </div>
 
-            <img src="https://w.bookcdn.com/weather/picture/1_9644_1_1_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=82684"
-                alt="booked.net" />
         </span>
-        <!-- </a> -->
-
     </div>
     <div class="section backg">
         <div class="container">
@@ -32,44 +34,47 @@
                     <div class="outer">
                         <img height="200px" width="450px" src="./mainLogo.png" />
                         <br><br>
-                        <input type="text" placeholder="Type here..." id="mySearch">
+                        <div class="input-icons">
+                            <i class="fa fa-search icon" style="color: black; padding-top: 15px;"></i>
+                            <input class="input-field" type="text" placeholder="Search" id="mySearch">
+                        </div>
                         <br><br>
                     </div>
                 </div>
             </div>
-            <div style="padding-left: 7%;" class="row w-50 mx-auto py-3 m-l-25">
-                <div class="col-2">
+            <div class="row w-50 mx-auto">
+                <div class="panel">
                     <a href="https://www.amazon.com">
-                        <img src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png" height="30px"
-                            width="30px" />
+                        <img src="https://www.freeiconspng.com/thumbs/amazon-icon/amazon-icon--socialmedia-iconset--uiconstock-0.png"
+                            height="50px" width="50px" />
                         <p style="color: white;">Amazon</p>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="panel">
                     <a href="https://www.twitter.com">
-                        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
-                            height="30px" width="30px" />
+                        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" height="50px"
+                            width="50px" />
                         <p style="color: white;">Twitter</p>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="panel">
                     <a href="https://www.facebook.com">
-                        <img src="https://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" height="30px"
-                            width="30px" />
+                        <img src="http://assets.stickpng.com/thumbs/58e91965eb97430e819064f5.png" height="50px"
+                            width="50px" />
                         <p style="color: white;">Facebook</p>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="panel">
                     <a href="https://www.youtube.com">
-                        <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png"
-                            height="30px" width="30px" />
+                        <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                            height="50px" width="50px" />
                         <p style="color: white;">Youtube</p>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="panel">
                     <a href="https://www.yahoo.com">
                         <img src="https://cdn.freebiesupply.com/logos/large/2x/yahoo-icon-logo-png-transparent.png"
-                            height="30px" width="30px" />
+                            height="50px" width="60px" />
                         <p style="color: white;">Yahoo</p>
                     </a>
                 </div>
@@ -79,28 +84,30 @@
 
     <footer class="footer mt-auto py-3">
         <div class="container">
+            <nav class="col-12 col-sm-12 col-md-12 col-lg-6 footer-b__nav">
+                <label class="custom-file-upload">
+                    <input id='getval' type="file" />
+                </label>
+                <p
+                    style=" padding-left: 10px;margin: 10px;position: absolute;left: 0;bottom: 0;color: white;font-size: 16;">
+                    Change Wallpaper</p>
+            </nav>
             <div class="row">
-                <nav class="col-12 col-sm-12 col-md-12 col-lg-6 footer-b__nav">
-                    <label class="custom-file-upload">
-                        <input id='getval' type="file" />
-                        Change Wallpaper
-                    </label>
-
-                </nav>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex hyperLinks justify-content-center justify-content-lg-end">
                     <ul class="d-flex justify-content-lg-start list-unstyled m-0 p-0">
-                        <li class="m-1"><a style="color: black;margin-right: 30px;" href="https://www.google.com"
-                                target="_blank">Privacy
+                        <li class="m-1"><a style="text-decoration: none;color: rgb(255, 255, 255);margin-right: 30px;"
+                                href="https://www.google.com" target="_blank">Privacy
                                 Policy</a>
                         </li>
-                        <li class="m-1"><a style="color: black;margin-right: 30px;" href="https://www.google.com"
-                                target="_blank">EULA</a>
+                        <li class="m-1"><a style="text-decoration: none;color: rgb(255, 255, 255);margin-right: 30px;"
+                                href="https://www.google.com" target="_blank">EULA</a>
                         </li>
-                        <li class="m-1"><a style="color: black; margin-right: 30px;" href="https://www.google.com"
-                                target="_blank">Contact</a>
+                        <li class="m-1"><a style="text-decoration: none; color: rgb(255, 255, 255); margin-right: 30px;"
+                                href="https://www.google.com" target="_blank">Contact</a>
                         </li>
-                        <li class="m-1"><a style="color: black;margin-right: 30px;" href="https://www.google.com"
-                                target="_blank">FAQ</a>
+                        <li class="m-1"><a style="text-decoration: none;color: rgb(255, 255, 255);margin-right: 30px;"
+                                href="https://www.google.com" target="_blank">FAQ</a>
                         </li>
                     </ul>
                 </div>
