@@ -4,7 +4,13 @@ var mybutton = document.getElementById("mybutton");
 var x = document.getElementById("details");
 
 (() => {
+  var path = localStorage.getItem("extWallpaper");
+  if (path) {
+    document.getElementById('clock').style.backgroundImage = "url(" + path + ")";
+  } else {
+    document.getElementById('clock').style.backgroundImage = "url('https://wallpaper.dog/large/10777293.jpg')"
 
+  }
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(Positionweather);
   } else {

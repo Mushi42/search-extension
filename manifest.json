@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "De Stress",
     "description": "Will open a new page ",
-    "version": "0.0.0.2",
+    "version": "0.0.0.3",
     "permissions": [
         "storage",
         "tabs",
