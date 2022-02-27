@@ -62,12 +62,12 @@ document.getElementById("mySearch")
   });
 
 
-window.onload = () => {
-  var path = localStorage.getItem("extWallpaper");
-  if (path) {
-    document.getElementById('clock').style.backgroundImage = "url(" + path + ")";
-  }
-}
+// window.onload = () => {
+//   var path = localStorage.getItem("extWallpaper");
+//   if (path) {
+//     document.getElementById('clock').style.backgroundImage = "url(" + path + ")";
+//   }
+// }
 
 
 document.getElementById('getval').addEventListener('change', readURL, true);
