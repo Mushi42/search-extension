@@ -34,11 +34,11 @@ function Positionweather(position) {
     .then(data => {
       var name = data.name;
       var country = data.sys.country;
-      var t = data.main.temp;
+      var t = data.main.temp.toFixed(0);
       var des = data.weather[0]["main"];
       x.style.display = "block";
       msg.textContent = name + " ," + country;
-      temp.textContent = t + " *C";
+      temp.textContent = t + " C";
       var icon1 = "https://openweathermap.org/img/wn/";
       var icon2 = data.weather[0]["icon"];
       var icon3 = "@2x.png";
